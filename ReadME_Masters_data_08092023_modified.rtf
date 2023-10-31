@@ -1,0 +1,74 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2709
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 1) Behaviour (movement & startle response)\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 Behaviour  data was taken 3 times in each Normoxia, hypoxia and recovery\
+ Trial refers to these 3 repetitions. However:\
+	- For movement: time between trials is 3 days, and the order a fish experienced the hypoxia treatments was randomised\
+	- For startle: trial actually refers to drop number. The time between trials is 10-30 min, and the order of treatment was NOT randomised. It always followed Normoxia, Hypoxia, Recovery\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 Therefore, each individual is represented in 9 rows (3 trials per 3 hypoxia treatments).\
+\
+These are the variables:\
+	A) movement\
+Head.time.moving \
+Head.total.time\
+Head.raw.speed \
+Head.speed.moving \
+Head.time.stationary\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 Note that Head.total.time should be 15 min (900s). But it actually goes from  865 to 1143 s. So all movement variables should be standardised to 900 s to be comparable\
+\
+Some stardarization is done for time.moving: Normalized_Time.moving But not for the rest.\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 	B) startle\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 Status : whether it responded or not\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 FSR: time to respond\
+\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 FastestFSR This is SUPPOSED to be the fasted time within treatment from the 3 drops. But there are mistakes\
+\
+FastestFSR2  This is the fasted time within treatment from the 3 drops. Hopefully correct now\
+\
+FastestStatus\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 2) Metabolic data\
+\
+Metabolic data was taken once in normoxia and once in Hypoxia. Never in Recovery.\
+These are the variables:\
+MMR_mghg \
+SMR_mghg \
+MMR_scaled \
+SMR_scaled    \
+AS\
+\
+Each individual has the same metabolic values for the 3 trials in normoxia and in hypoxia, it has NA for recovery\
+\
+3) Other variables\
+\
+Harvest2: Fishing treatment giving Beas_population_code\
+		Positive -> fish larger than 16 mm were killed\
+		Negative  -> fish smaller than 16 mm were killed\
+		Random -> fish small and large were killed\
+\
+Length2: Trial 1 and 2 have Length_start, while trial 3 have Length_end\
+\
+\
+Weight_start      Weight_end      Length_start     Length_end         SGR           Weight_resp \
+\
+_start means it was taken at the time of tagging\
+_end means it was taken at the end of everything}
